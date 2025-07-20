@@ -1,29 +1,22 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
-
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# Directorios de configuracion de VS Code
 .vscode/
 
-### Mac OS ###
-.DS_Store
+# Archivos de configuracion de VS Code
+*.vsc-xml
+
+# Archivo de ignoracion de Git (es buena practica incluirlo)
+.gitignore
+
+# Archivos temporales, de cache, logs o binarios
+# Puedes añadir mas segun lo que uses en tus proyectos
+# Por ejemplo, para Python:
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Archivos especificos que no son relevantes y aparecen
+discord.xml
+MoundDev.xml
+modules.xml
