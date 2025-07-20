@@ -32,4 +32,12 @@
 # ***
 # ****
 # *****
-# 👉 Pista: puedes usar "*" * i
+# 👉 Pista: puedes usar "*"
+
+
+
+nombre = input("Ingrese su nombre: ")
+
+for i, letra in enumerate (nombre, start= 1):
+    print(f"Letra {i}: {letra}")
+
