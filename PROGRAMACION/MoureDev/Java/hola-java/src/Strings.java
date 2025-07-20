@@ -52,5 +52,17 @@ public class Strings    {
 
     System.out.println(a.equals(c));    // En este caso el equals compara contenido, por eso da true
 
+
+    // Trim
+    System.out.println(" Hola, me llamo Jonathan ".trim());    //Esto limpia los espacios de las cadenas de texto
+
+    // Replace
+    System.out.println(" Hola, me llamo Jonathan ".replace(" ", ""));   // Remplaza los espacios en blancos y los elimina por eso al imprimir la frase queda todo junto
+
+
+    // Format
+    var age = 22;
+        System.out.println(String.format("Hola, %s. Tengo %d años.", name, age));
+
     }
 }
