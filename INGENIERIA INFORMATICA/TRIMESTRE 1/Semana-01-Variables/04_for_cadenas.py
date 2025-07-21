@@ -41,3 +41,21 @@ nombre = input("Ingrese su nombre: ")
 for i, letra in enumerate (nombre, start= 1):
     print(f"Letra {i}: {letra}")
 
+
+
+
+
+palabra = input("Ingrese una palabra: ")
+
+vocales = "aeiou"
+contador_total = 0
+
+for letra in palabra:
+    if letra in vocales:
+        contador_total+= 1
+
+print(f"Total de vocales: {contador_total}.")
+
+
+
+
