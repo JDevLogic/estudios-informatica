@@ -24,5 +24,46 @@ public class ConditionalsExercises {
 
 
 
+
+//1
+    var age = 15;
+
+
+    if (age >= 18){
+        System.out.println("El usuario tiene derecho a votar.");
+    }else{
+        System.out.println("El usuario todavia no tiene derecho a votar.");
+    }
+
+
+//2
+    var num1 = 4;
+    var num2 = 4;
+
+    if (num1 < num2){
+        System.out.println("El segundo numero es mayor que el primer numero .");
+    } else if (num1 > num2) {
+        System.out.println("El primer numero es mayor que el segundo numero.");
+    }else{
+        System.out.println("Los dos numeos son iguales.");
+    }
+
+
+
+//3
+
+
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
