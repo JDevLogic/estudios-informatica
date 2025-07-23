@@ -22,5 +22,29 @@ public class Conditionals {
 
     }
 
+
+
+    //switch
+
+    var day = 3;
+
+    switch (day){
+        case 1:
+            System.out.println("Lunes");
+            break;
+
+        case 2:
+            System.out.println("Martes");
+            break;
+
+        case 3:
+            System.out.println("Miercoles");
+            break;
+
+        default:
+            System.out.println("No es lunes, martes o miercoles.");
+    }
+
+
     }
 }
