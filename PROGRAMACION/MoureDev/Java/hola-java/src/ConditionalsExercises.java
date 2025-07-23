@@ -51,19 +51,84 @@ public class ConditionalsExercises {
 
 
 //3
+    var num = -12;
 
+    if (num < 0 ) {
+        System.out.println("El numero es negativo.");
+    } else if (num == 0) {
+        System.out.println("El numero es igual a cero.");
+    }else{
+        System.out.println("El numero es positivo.");
+    }
+
+
+
+//4
+    var num3 = 13;
+
+    if(num3 % 2 == 0 ) {
+        System.out.println("El numero es par");
+    } else{
+        System.out.println("El numero es impar.");
+    }
+
+
+
+//5
+    var num4 = 101;
+
+    if (num4 <= 100){
+        System.out.println("El numero esta en el rango o es igual a 100.");
+    }else{
+        System.out.println("El numero esta fuera del rango.");
+    }
+
+
+
+//6
+    var day = 8;
+
+    switch (day){
+        case 1:
+            System.out.println("Hoy es Lunes.");
+            break;
+
+        case 2:
+            System.out.println("Hoy es Martes.");
+            break;
+
+        case 3 :
+            System.out.println("Hoy es Miercoles.");
+            break;
+
+        case 4:
+            System.out.println("Hoy es Jueves.");
+            break;
+
+        case 5:
+            System.out.println("Hoy es Viernes.");
+            break;
+
+        case 6:
+            System.out.println("Hoy es Sabado.");
+            break;
+
+        case 7:
+            System.out.println("Hoy es Domingo");
+            break;
+
+        default:
+            System.out.println("No es ningun dia de la semana.");
 
     }
+
+
+
+//7
+
+
+
+
+        
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
