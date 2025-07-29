@@ -125,6 +125,28 @@ public class ConditionalsExercises {
 
 
 //7
+    var nota = 4;
+
+    if (nota >= 10 ){
+        System.out.println("Sobresaliente.");
+    }
+
+     else if (nota >= 7 ){
+         System.out.println("Notable.");
+     }
+    else if (nota >=5){
+        System.out.println("Aprobado.");
+        }
+    else{
+        System.out.println("Suspenso.");
+    }
+
+
+
+//8
+
+
+
 
 
 
