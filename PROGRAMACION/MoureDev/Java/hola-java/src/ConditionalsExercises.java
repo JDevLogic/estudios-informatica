@@ -144,6 +144,20 @@ public class ConditionalsExercises {
 
 
 //8
+    var edad = 14;
+    boolean acompañado = false;
+
+
+    if (edad >= 15 || acompañado){
+        System.out.println("Puedes pasar al cine");
+    }
+    else{
+        System.out.println("No puedes pasar al cine tienes que cumplir una de las 2 condiciones.");
+    }
+
+
+
+//9
 
 
 
