@@ -24,13 +24,13 @@ def calcular_cuadrado(a):
 print (calcular_cuadrado(7))
 
 
-
 # 3.  Una función es_par(numero) que devuelva True si el número es par y False si es impar.
 
 def es_par(a):
     return a % 2 == 0
 
 print(es_par(3))
+
 
 # 4. Una función presentacion(nombre, edad) que devuelva un mensaje como:
 
