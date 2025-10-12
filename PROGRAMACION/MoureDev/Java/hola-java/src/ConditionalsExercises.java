@@ -28,7 +28,6 @@ public class ConditionalsExercises {
 //1
     var age = 15;
 
-
     if (age >= 18){
         System.out.println("El usuario tiene derecho a votar.");
     }else{
@@ -130,7 +129,6 @@ public class ConditionalsExercises {
     if (nota >= 10 ){
         System.out.println("Sobresaliente.");
     }
-
      else if (nota >= 7 ){
          System.out.println("Notable.");
      }
@@ -158,10 +156,18 @@ public class ConditionalsExercises {
 
 
 //9
+    char letra = 'a';        
+
+    if (letra == 'a' || letra == 'e' || letra == 'i' || letra == 'o' || letra == 'u'){
+        System.out.println("La letra '" + letra + "' es una vocal.");
+    }
+    else{
+        System.out.println("La letra '" + letra + "' es una consonante.");
+    }
 
 
 
-
+//10
 
 
 
