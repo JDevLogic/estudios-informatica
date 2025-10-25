@@ -55,6 +55,22 @@ print(verificacion, cociente , resto)
 #    - Si no, devolver (False, "No encontrado")
 #    - Pruébala y maneja las dos ramas (éxito/error).
 
+def buscar_usuario(usuarios,username):
+    for usuario in usuarios:
+        if usuario ["user"] == username:
+            return True, usuario
+    return False, "No encontrado"
+
+usuarios = [
+    {"user": "Jonathan", "edad": 22},
+    {"user": "Bryan", "edad": 12},
+    {"user": "Miriam", "edad": 49}
+]
+
+print(buscar_usuario(usuarios, "Jonathan"))
+print(buscar_usuario(usuarios, "Bryan"))
+print(buscar_usuario(usuarios, "Miriam"))
+print(buscar_usuario(usuarios, "Manuel"))
 
 
 # 4) (Opcional) 'normalizar_vector(x, y)':
