@@ -197,10 +197,6 @@ ls "PROGRAMACION\Python\Python 2025\Apuntes 2025\*.md"
 ```bash
 # Alias para navegación rápida
 alias estudios="cd 'C:\Users\jonathan\Desktop\GitHub\estudios-informatica'"
-alias python2025="cd 'C:\Users\jonathan\Desktop\GitHub\estudios-informatica\PROGRAMACION\Python\Python 2025'"
-alias java="cd 'C:\Users\jonathan\Desktop\GitHub\estudios-informatica\PROGRAMACION\MoureDev\Java'"
-alias ingenieria="cd 'C:\Users\jonathan\Desktop\GitHub\estudios-informatica\INGENIERIA INFORMATICA'"
-
 # Comandos rápidos para commits
 alias commitdia="git add . && git commit -m 'Add: Ejercicios del día'"
 ```
@@ -228,5 +224,5 @@ alias commitdia="git add . && git commit -m 'Add: Ejercicios del día'"
 
 ---
 
-👨‍🎓 *Documento creado para Jonathan - Estudiante de Ingeniería Informática*
+👨‍🎓 *Documento creado para Jonathan *
 📅 *Última actualización: Basada en estructura actual del repositorio con 12 días de Python 2025*
