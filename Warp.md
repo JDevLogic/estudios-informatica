@@ -194,6 +194,17 @@ ls "PROGRAMACION\Python\Python 2025\Apuntes 2025\*.md"
 - **Fuente código**: Optimizada para Python y Java
 - **Colores personalizados**: Diferencias visuales para cada lenguaje
 
+<<<<<<< HEAD
+=======
+### ⚙️ **Shortcuts personalizados**
+```bash
+# Alias para navegación rápida
+alias estudios="cd 'C:\Users\jonathan\Desktop\GitHub\estudios-informatica'"
+# Comandos rápidos para commits
+alias commitdia="git add . && git commit -m 'Add: Ejercicios del día'"
+```
+
+>>>>>>> d64daccb6c574f98bb38f324d1fa07bb76fd6bcc
 ### 🔌 **Integración con tu stack**
 - **Obsidian**: Comandos para crear y editar apuntes
 - **VSCode**: Apertura rápida de proyectos
@@ -217,5 +228,9 @@ ls "PROGRAMACION\Python\Python 2025\Apuntes 2025\*.md"
 
 ---
 
+<<<<<<< HEAD
 👨‍🎓 *Documento creado para Jonathan - Estudiante de Informática*
+=======
+👨‍🎓 *Documento creado para Jonathan *
+>>>>>>> d64daccb6c574f98bb38f324d1fa07bb76fd6bcc
 📅 *Última actualización: Basada en estructura actual del repositorio con 12 días de Python 2025*
