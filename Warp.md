@@ -2,7 +2,7 @@
 
 ## Contexto en este repositorio
 
-Este documento forma parte del repositorio `estudios-informatica`, dedicado al material de estudio personal para programación, ingeniería informática y desarrollo backend.
+Este documento forma parte del repositorio `estudios-informatica`, dedicado al material de estudio personal para programación, "ingeniería informática" y desarrollo backend.
 
 ### 📁 Estructura del repositorio
 
@@ -35,9 +35,10 @@ Warp es una terminal moderna construida con Rust que revoluciona la experiencia 
 
 ### 1. **Gestión de múltiples cursos y proyectos**
 Tu repositorio muestra que estudias:
-- **Ingeniería Informática** (curso académico estructurado)
+- **"Ingeniería Informática"** (curso académico estructurado)
 - **Python 2025** (curso intensivo con ejercicios diarios)
 - **Java con MoureDev** (ejercicios de programación básica)
+- **Cursos de Hola Mundo**
 - **Proyectos personales** (Hola mundo, calculadoras, etc.)
 
 ### 2. **Mejor experiencia de aprendizaje progresivo**
@@ -135,7 +136,7 @@ git diff "Dia_9\calculadora.py" "Dia_10\calculadora.py"
 ### 🔄 **Para tu metodología de estudio**
 - **Sesión diaria estructurada**: Comandos organizados por tema del día
 - **Comparación de versiones**: Ver evolución entre ejercicios similares
-- **Múltiples proyectos activos**: Cambiar entre Ingeniería, MoureDev, y Python 2025
+- **Múltiples proyectos activos**: Cambiar entre "Ingeniería", MoureDev, y Python 2025, Hola mundo, etc.
 - **Integración con Obsidian**: Comandos para gestionar tus apuntes markdown
 
 ### 📈 **Para tu progreso académico**
@@ -193,18 +194,6 @@ ls "PROGRAMACION\Python\Python 2025\Apuntes 2025\*.md"
 - **Fuente código**: Optimizada para Python y Java
 - **Colores personalizados**: Diferencias visuales para cada lenguaje
 
-### ⚙️ **Shortcuts personalizados**
-```bash
-# Alias para navegación rápida
-alias estudios="cd 'C:\Users\jonathan\Desktop\GitHub\estudios-informatica'"
-alias python2025="cd 'C:\Users\jonathan\Desktop\GitHub\estudios-informatica\PROGRAMACION\Python\Python 2025'"
-alias java="cd 'C:\Users\jonathan\Desktop\GitHub\estudios-informatica\PROGRAMACION\MoureDev\Java'"
-alias ingenieria="cd 'C:\Users\jonathan\Desktop\GitHub\estudios-informatica\INGENIERIA INFORMATICA'"
-
-# Comandos rápidos para commits
-alias commitdia="git add . && git commit -m 'Add: Ejercicios del día'"
-```
-
 ### 🔌 **Integración con tu stack**
 - **Obsidian**: Comandos para crear y editar apuntes
 - **VSCode**: Apertura rápida de proyectos
@@ -228,5 +217,5 @@ alias commitdia="git add . && git commit -m 'Add: Ejercicios del día'"
 
 ---
 
-👨‍🎓 *Documento creado para Jonathan - Estudiante de Ingeniería Informática*
+👨‍🎓 *Documento creado para Jonathan - Estudiante de Informática*
 📅 *Última actualización: Basada en estructura actual del repositorio con 12 días de Python 2025*
