@@ -78,4 +78,21 @@ print(buscar_usuario(usuarios, "Manuel"))
 #    - Si la magnitud es 0, devolver (0.0, 0.0, 0.0)
 #    - Úsalo para practicar retorno múltiple + guard clause.
 
+import math
+
+def normalizar_vector(x, y):
+
+    magnitud = math.sqrt(x**2 +y**2)
+
+# ------ Guard clause ------
+    if magnitud == 0:
+        return 0.0, 0.0, 0.0
+# -----------------------------
+
+    x_norm = x / magnitud
+    y_norm = y / magnitud
+
+    return magnitud, x_norm, y_norm
+    
+print(normalizar_vector(3,4))
 
