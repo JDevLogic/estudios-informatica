@@ -10,21 +10,22 @@ Este documento forma parte del repositorio `estudios-informatica`, dedicado al m
 estudios-informatica/
 ├── INGENIERIA INFORMATICA/
 │   └── TRIMESTRE 1/
-│       ├── Semana-01-Variables/     # Introducción, condicionales, bucles
-│       └── Semana-02-Funciones/     # Funciones y parámetros
+│       ├── Semana-01-Variables/             # Introducción, condicionales, bucles
+│       ├── Semana-02-Funciones/             # Funciones y parámetros
+│       └── Semana-03-Estructuras-Datos/     # Listas y tuplas
 ├── PROGRAMACION/
 │   ├── Hola_mundo/
 │   │   ├── Git+Github_con_Hola_Mundo/
-│   │   └── Python con Hola mundo/   # Clases, funciones, tipos avanzados
+│   │   └── Python con Hola mundo/      # Clases, funciones, tipos avanzados
 │   ├── MoureDev/
-│   │   ├── Java/                   # Ejercicios de Java básico
-│   │   └── Python con Moure/       # Tutoriales de MoureDev
+│   │   ├── Java/                       # Ejercicios de Java básico
+│   │   └── Python con Moure/           # Tutoriales de MoureDev
 │   └── Python/
-│       ├── Apuntes/                # Documentación completa
+│       ├── Apuntes/                    # Documentación completa
 │       ├── Ejercicios
-│       └── Python 2025/            # Curso actual con Obsidian
-│           ├── Apuntes 2025/       # 11 días de apuntes
-│           └── Ejercicios 2025/    # 12 días de ejercicios
+│       └── Python 2025/                # Curso actual con Obsidian
+│           ├── Apuntes 2025/           # 11 días de apuntes
+│           └── Ejercicios 2025/        # 12 días de ejercicios
 ```
 
 ## ¿Qué es Warp?
@@ -35,11 +36,11 @@ Warp es una terminal moderna construida con Rust que revoluciona la experiencia 
 
 ### 1. **Gestión de múltiples cursos y proyectos**
 Tu repositorio muestra que estudias:
-- **"Ingeniería Informática"** (curso académico estructurado)
-- **Python 2025** (curso intensivo con ejercicios diarios)
-- **Java con MoureDev** (ejercicios de programación básica)
-- **Cursos de Hola Mundo**
-- **Proyectos personales** (Hola mundo, calculadoras, etc.)
+- **"Ingeniería Informática"** *(formación autodidacta estructurada)*
+- **Python 2025** *(curso intensivo con ejercicios diarios autodidacta)*
+- **Java con MoureDev** *(ejercicios de programación básica)*
+- **Cursos de Hola Mundo** *(Cursos del creador de la academia de Hola Mundo)*
+
 
 ### 2. **Mejor experiencia de aprendizaje progresivo**
 - **Bloques de comandos**: Perfecto para seguir tus ejercicios diarios (Día 1, Día 2, etc.)
@@ -52,7 +53,7 @@ Basado en tu repositorio, trabajas con:
 - **Java** (ejercicios básicos y orientación a objetos)
 - **Git/GitHub** (control de versiones para tus proyectos)
 - **Obsidian** (para tus apuntes markdown)
-- **Multiple IDEs** (IntelliJ IDEA, VSCode)
+- **Multiple IDEs** (IntelliJ IDEA, VSCode,  Windsurf, Antigravity)
 
 ## Comandos específicos para tu flujo de estudios
 
@@ -113,17 +114,6 @@ git commit -m "Add: Ejercicios Día 12 - Funciones avanzadas"
 git log --oneline "PROGRAMACION\Python\Python 2025"
 ```
 
-### 🔧 Comandos útiles para debugging
-```bash
-# Verificar sintaxis Python sin ejecutar
-python -m py_compile archivo.py
-
-# Ejecutar con modo verbose para debugging
-python -v mi_script.py
-
-# Ver diferencias entre versiones de ejercicios
-git diff "Dia_9\calculadora.py" "Dia_10\calculadora.py"
-```
 
 ## Ventajas específicas para tu flujo de estudios
 
@@ -200,16 +190,9 @@ ls "PROGRAMACION\Python\Python 2025\Apuntes 2025\*.md"
 - **IntelliJ**: Gestión de proyectos Java
 - **Git**: Workflows optimizados para tu patrón de commits
 
-## Instalación y primeros pasos
-
-1. 📱 **Descargar**: [warp.dev](https://warp.dev) (disponible para Windows)
-2. ⚙️ **Configurar**: Importar aliases y shortcuts recomendados
-3. 📁 **Navegar**: Probar navegación a tus carpetas de estudio
-4. 📝 **Personalizar**: Adaptar según tu flujo de estudio diario
 
 ## Beneficios inmediatos para tus estudios
 
-✅ **Menos tiempo navegando** entre las +200 carpetas y archivos
 ✅ **Historial inteligente** de todos tus ejercicios por día
 ✅ **Autocompletado** para rutas complejas de Windows
 ✅ **Bloques visuales** para organizar sesiones de estudio
@@ -219,4 +202,4 @@ ls "PROGRAMACION\Python\Python 2025\Apuntes 2025\*.md"
 
 
 👨‍🎓 *Documento creado por Jonathan - Estudiante de Informática*
-📅 *Última actualización: Basada en estructura actual del repositorio con 12 días de Python 2025*
+📅*Última actualización: Estructura del repositorio adaptada al progreso actual de mis estudios*
