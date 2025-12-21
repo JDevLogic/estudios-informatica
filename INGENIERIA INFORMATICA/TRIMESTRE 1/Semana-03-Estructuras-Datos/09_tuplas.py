@@ -41,3 +41,25 @@ for nombre in nombres:
 # - Desempaquetado de valores
 # - Datos que no deben cambiar (coordenadas, configuraciones, resultados)
 
+
+
+# =========================
+# Desempaquetado de tuplas
+# =========================
+
+coordenadas = (10, 20)
+
+x, y = coordenadas
+
+print(x)
+print(y)
+
+
+persona = ("Jonathan", 22, "Bilbao")
+
+nombre, edad, ciudad = persona
+
+print(nombre)
+print(edad)
+print(ciudad)
+
