@@ -3,7 +3,13 @@
 ## Ejercicios
 
 1. Crea un script que imprima en pantalla: Hola mundo desde Bash.
+``` bash
+touch hola_script.sh
+nano hola_script.sh
 
+#!/bin/bash
+echo "Hola mundo desde mi primer script"
+```
 2. Crea un script que muestre la fecha y el directorio actual.
 
 3. Crea un script que guarde tu nombre en una variable y lo muestre en pantalla.
