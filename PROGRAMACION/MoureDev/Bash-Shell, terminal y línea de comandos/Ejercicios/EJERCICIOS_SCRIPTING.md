@@ -11,7 +11,18 @@ nano hola_script.sh
 echo "Hola mundo desde mi primer script"
 ```
 2. Crea un script que muestre la fecha y el directorio actual.
+```bash
+touch fecha_pwd_script.sh
+nano fecha_pwd_script.sh
 
+#!/bin/bash
+echo "Fecha: $(date)"
+echo "Directorio actual: $(pwd)"
+
+# Para poder ejecutar el script
+chmod +x fecha_pwd_script.sh
+./fecha_pwd_script.sh
+```
 3. Crea un script que guarde tu nombre en una variable y lo muestre en pantalla.
 
 4. Crea un script que declare dos variables numéricas, las sume, reste y multiplique, mostrando el resultado de cada operación.
