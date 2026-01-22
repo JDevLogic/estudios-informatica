@@ -24,11 +24,51 @@ chmod +x fecha_pwd_script.sh
 ./fecha_pwd_script.sh
 ```
 3. Crea un script que guarde tu nombre en una variable y lo muestre en pantalla.
+```bash
+touch nombre_script.sh
+nano nombre_script.sh
 
+#!/bin/bash
+nombre="Jonathan"
+echo "Hola, $nombre"
+
+# Para poder ejecutar el script
+chmod +x nombre_script.sh
+./nombre_script.sh
+```
 4. Crea un script que declare dos variables numéricas, las sume, reste y multiplique, mostrando el resultado de cada operación.
+```bash
+touch numeros_script.sh
+nano numeros_script.sh
+
+#!/bin/bash
+a=10
+b=3
+sum=$((a + b))
+rest=$((a - b))
+multi=$((a * b))
+
+echo "La suma es $sum"
+echo "La resta es $rest"
+echo "La multiplicacion es $multi"
+
+# Para poder ejecutar el script
+chmod +x numeros_script.sh
+./numeros_script.sh
+```
 
 5. Crea un script que pida tu nombre con read y lo muestre.
+```bash
+touch read_nombre_script.sh
+nano read_nombre_script.sh
 
+read -p "¿Cual es tu nombre? " nombre
+echo "Tu nombre es $nombre"
+
+# Para poder ejecutar el script
+chmod +x read_nombre_script.sh
+./read_nombre_script.sh
+```
 6. Crea un script que pida dos números al usuario y muestre su suma.
 
 7. Crea un script con tres argumentos que muestre el primero y el tercero.
