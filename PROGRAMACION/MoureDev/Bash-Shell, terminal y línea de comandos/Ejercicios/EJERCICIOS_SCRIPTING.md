@@ -116,5 +116,34 @@ chmod +x numero_total_script.sh
 ./numero_total_script.sh A B C
 ```
 9. Crea un script que reciba dos números como argumentos y muestre su suma, resta, multiplicación y división.
+```bash
+touch dos_numeros_script.sh
+nano dos_numeros_script.sh
 
+#!/bin/bash
+sum=$(($1 + $2))
+rest=$(($1 - $2))
+mult=$(($1 * $2))
+div=$(($1 / $2))
+
+echo "El resultado de la suma es: $sum"
+echo "El resultado de la resta es: $rest"
+echo "El resultado de la multiplicacion es: $mult"
+echo "El resultado de la divison es: $div"
+
+# Para poder ejecutar el script
+chmod +x dos_numeros_script.sh
+
+# Los argumentos se pasan al ejecutar el script desde la terminal
+./dos_numeros_script.sh 10 5
+
+```
 10. Crea un script que cree un archivo de texto y guarde tu nombre en su interior.
+```bash
+touch archivo_nombre_script.sh
+nano archivo_nombre_script.sh
+
+#!/bin/bash
+read -p "Introduce tu nombre completo: " nombre
+echo "Tu nombre completo es: $nombre" > archivo_nombre.txt
+```
