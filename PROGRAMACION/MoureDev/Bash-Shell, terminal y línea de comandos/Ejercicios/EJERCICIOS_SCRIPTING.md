@@ -62,6 +62,7 @@ chmod +x numeros_script.sh
 touch read_nombre_script.sh
 nano read_nombre_script.sh
 
+#!/bin/bash
 read -p "¿Cual es tu nombre? " nombre
 echo "Tu nombre es $nombre"
 
@@ -70,11 +71,50 @@ chmod +x read_nombre_script.sh
 ./read_nombre_script.sh
 ```
 6. Crea un script que pida dos números al usuario y muestre su suma.
+```bash
+touch suma_script.sh
+nano suma_script.sh
 
+#!/bin/bash
+read -p "Introduce el primer numero: " num1
+read -p "Introduce el segundo numero: " num2
+
+sum=$((num1 + num2))
+echo "La respuesta de la suma es $sum"
+
+# Para poder ejecutar el script
+chmod +x suma_script.sh
+./suma_script.sh
+```
 7. Crea un script con tres argumentos que muestre el primero y el tercero.
+```bash
+touch argumentos_script.sh
+nano argumentos_script.sh
 
+#!/bin/bash
+echo "El primero argumento es: $1"
+echo "El tercer argumento es: $3"
+
+# Para poder ejecutar el script
+chmod +x argumentos_script.sh
+
+# Los argumentos se pasan al ejecutar el script desde la terminal
+./argumentos_script.sh A B C
+```
 8. Crea un script con argumentos que muestre el número total.
+```bash
+touch numero_total_script.sh
+nano numero_total_script.sh
 
+#!/bin/bash
+echo "Numero de parametros: $#"
+
+# Para poder ejecutar el script
+chmod +x numero_total_script.sh
+
+# Los argumentos se pasan al ejecutar el script desde la terminal
+./numero_total_script.sh A B C
+```
 9. Crea un script que reciba dos números como argumentos y muestre su suma, resta, multiplicación y división.
 
 10. Crea un script que cree un archivo de texto y guarde tu nombre en su interior.
