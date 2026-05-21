@@ -310,47 +310,178 @@ Esto prepara el camino para entender mejor el polimorfismo.
 
 ## Polimorfismo
 
-El polimorfismo será el siguiente punto del Día 13.
+El polimorfismo permite que objetos de diferentes clases puedan usarse de la misma manera si comparten métodos con el mismo nombre y la misma forma de uso.
 
-La idea principal será:
+La idea principal es:
 
 ```text
 Mismo método.
-Misma forma de usarlo desde fuera.
+Misma forma de llamarlo.
 Distinto comportamiento según la clase.
 ```
 
-Ejemplo conceptual:
+En este ejercicio, `Personaje`, `Guerrero` y `Mago` tienen un método llamado `atacar`.
 
-```text
-Personaje usa atacar.
-Guerrero usa atacar.
-Mago usa atacar.
+Todos se usan igual desde fuera:
 
-El método se llama igual, pero cada clase puede comportarse de forma diferente.
+```python
+objeto.atacar(objetivo)
 ```
 
-## Resumen de lo aprendido hasta ahora
+Pero cada clase ejecuta ese método de forma diferente.
 
-Hasta este punto del Día 13 he practicado:
+## Diferencia con el ejercicio anterior
 
-* Crear clases.
-* Crear objetos.
-* Usar `__init__`.
-* Entender `self`.
-* Crear atributos.
-* Crear métodos.
-* Modificar atributos desde métodos.
-* Pasar objetos como parámetros.
-* Crear clases hijas.
-* Entender la herencia.
-* Crear métodos propios en clases hijas.
-* Entender que las clases hermanas no heredan entre ellas.
-* Interpretar errores `AttributeError`.
-* Sobrescribir métodos en clases hijas.
+Antes tenía una diferencia en la forma de llamar al método `atacar`.
 
-## Próximo punto
+En `Personaje` se usaba así:
 
-El próximo punto será practicar polimorfismo de forma sencilla.
+```python
+jonathan.atacar(lucia, 25)
+```
 
-La idea será conseguir que varios objetos diferentes tengan un método con el mismo nombre y se puedan usar de la misma manera desde fuera, aunque cada clase haga algo diferente internamente.
+Pero en `Guerrero` y `Mago` se usaba así:
+
+```python
+paladin.atacar(jonathan)
+mago.atacar(paladin)
+```
+
+Eso funcionaba, pero no era tan limpio porque el mismo método no se usaba igual en todas las clases.
+
+Para aplicar mejor el polimorfismo, se cambió el método `atacar` para que todos los objetos lo usen de la misma manera:
+
+```python
+jonathan.atacar(mago)
+paladin.atacar(jonathan)
+mago.atacar(paladin)
+```
+
+Ahora el daño no se pasa desde fuera, sino que cada clase decide internamente cuánto daño hace.
+
+## Ataque en cada clase
+
+En este ejercicio:
+
+* `Personaje` tiene un ataque básico de 10 de daño.
+* `Guerrero` tiene un ataque con espada de 25 de daño.
+* `Mago` tiene un ataque mágico básico de 20 de daño.
+
+Aunque el método se llama igual en las tres clases, cada clase tiene su propia versión.
+
+Esto significa que Python ejecuta el método correcto según el tipo real del objeto.
+
+## Polimorfismo con listas
+
+Una parte importante del ejercicio fue crear una lista con objetos de diferentes clases:
+
+```python
+atacantes = [jonathan, paladin, mago]
+```
+
+La lista contiene:
+
+* `jonathan`, que es un objeto de tipo `Personaje`.
+* `paladin`, que es un objeto de tipo `Guerrero`.
+* `mago`, que es un objeto de tipo `Mago`.
+
+Aunque son objetos de clases diferentes, todos tienen el método `atacar(objetivo)`.
+
+Por eso se puede recorrer la lista con un `for`:
+
+```python
+for atacante in atacantes:
+    atacante.atacar(lucia)
+```
+
+La línea:
+
+```python
+atacante.atacar(lucia)
+```
+
+se ejecuta igual para todos, pero el resultado cambia según el objeto.
+
+Python hace esto internamente:
+
+```text
+Si atacante es Personaje -> usa Personaje.atacar()
+Si atacante es Guerrero -> usa Guerrero.atacar()
+Si atacante es Mago -> usa Mago.atacar()
+```
+
+## Ventaja del polimorfismo
+
+La ventaja del polimorfismo es que no hace falta comprobar manualmente qué tipo de objeto se está usando.
+
+No hace falta hacer algo como:
+
+```text
+Si es Guerrero, ataca de una forma.
+Si es Mago, ataca de otra forma.
+Si es Personaje, ataca de otra forma.
+```
+
+En su lugar, simplemente se llama al método común:
+
+```python
+atacante.atacar(lucia)
+```
+
+Y cada clase responde a su manera.
+
+## Resultado del ejercicio
+
+En el ejercicio, `lucia` empieza con 80 de vida.
+
+Después recibe ataques de:
+
+```text
+Jonathan -> 10 de daño
+Paladin -> 25 de daño
+Mago -> 20 de daño
+```
+
+El daño total recibido es:
+
+```text
+10 + 25 + 20 = 55
+```
+
+Por eso `lucia` termina con:
+
+```text
+80 - 55 = 25
+```
+
+Resultado final:
+
+```text
+Lucia 25 3
+```
+
+También se comprobaron otros ataques individuales:
+
+```python
+jonathan.atacar(mago)
+paladin.atacar(jonathan)
+mago.atacar(paladin)
+```
+
+Con esto se confirmó que cada objeto ejecuta su propia versión del método `atacar`.
+
+## Conclusión sobre polimorfismo
+
+El polimorfismo permite trabajar con objetos diferentes de forma común.
+
+La idea clave es:
+
+```text
+No pregunto qué tipo de objeto es.
+Solo llamo al método común.
+Cada clase responde a su manera.
+```
+
+En este ejercicio he aprendido que varios objetos pueden compartir el mismo método `atacar`, usarse con la misma estructura y tener comportamientos diferentes según la clase.
+
+Esto hace que el código sea más limpio, más flexible y más fácil de ampliar.
