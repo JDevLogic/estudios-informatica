@@ -1,205 +1,81 @@
-# Warp Terminal - Herramienta para Estudios de Informática
+# estudios-informatica
 
-## Contexto en este repositorio
+Repositorio personal de apuntes y ejercicios de programación e informática autodidacta.
 
-Este documento forma parte del repositorio `estudios-informatica`, dedicado al material de estudio personal para programación, "ingeniería informática" y desarrollo backend.
-
-### 📁 Estructura del repositorio
+## Estructura
 
 ```
 estudios-informatica/
+│
 ├── INGENIERIA INFORMATICA/
 │   └── TRIMESTRE 1/
-│       ├── Semana-01-Variables/             # Introducción, condicionales, bucles
-│       ├── Semana-02-Funciones/             # Funciones y parámetros
-│       └── Semana-03-Estructuras-Datos/     # Listas y tuplas
-├── PROGRAMACION/
-│   ├── Hola_mundo/
-│   │   ├── Git+Github_con_Hola_Mundo/
-│   │   └── Python con Hola mundo/      # Clases, funciones, tipos avanzados
-│   ├── MoureDev/
-│   │   ├── Java/                       # Ejercicios de Java básico
-│   │   └── Python con Moure/           # Tutoriales de MoureDev
-│   └── Python/
-│       ├── Apuntes/                    # Documentación completa
-│       ├── Ejercicios
-│       └── Python 2025/                # Curso actual con Obsidian
-│           ├── Apuntes 2025/           # 11 días de apuntes
-│           └── Ejercicios 2025/        # 12 días de ejercicios
+│       ├── Semana-01-Variables/        # Introducción, condicionales, bucles, for
+│       ├── Semana-02-Funciones/        # Funciones, parámetros, retorno múltiple
+│       └── Semana-03-Estructuras-Datos/ # Listas y tuplas
+│
+└── PROGRAMACION/
+    ├── Hola_mundo/
+    │   ├── Git+Github_con_Hola_Mundo/  # Práctica de Git con Python básico
+    │   └── Python con Hola mundo/      # Curso completo (clases, tipos, funciones,
+    │       ├── clases/                 #   OOP, herencia, polimorfismo, duck typing)
+    │       ├── control_flujo/          # If ternario, bucles anidados, calculadora
+    │       ├── excepciones/            # try/except, tipos de error, else/finally
+    │       ├── funciones/              # *args, **kwargs, return, depuración
+    │       ├── tipos/                  # Strings, números, conversiones
+    │       └── tipos_avanzados/        # Listas, tuplas, sets, dicts, colas, pilas
+    │
+    ├── MoureDev/
+    │   ├── Bash-Shell, terminal y línea de comandos/
+    │   │   ├── Apuntes/                # 34 archivos .md (shell → scripting)
+    │   │   │   └── Scripts/            # Scripts de ejemplo (.sh)
+    │   │   └── Ejercicios/             # 6 sets de ejercicios en Markdown
+    │   ├── Java/
+    │   │   └── hola-java/src/          # HelloWorld, DataTypes, Variables,
+    │   │                               #   Operators, Strings, Conditionals + ejercicios
+    │   └── Python con Moure/           # Tipos de datos y variables (en progreso)
+    │
+    └── Python/
+        ├── Apuntes/                    # Apuntes generales de Python (.md y .txt)
+        └── Python 2025/
+            ├── Apuntes 2025/           # Dias 1-12 en Obsidian (.md)
+            └── Ejercicios 2025/        # Dias 1-12 de ejercicios Python
 ```
 
-## ¿Qué es Warp?
+## Python 2025 — Progreso día a día
 
-Warp es una terminal moderna construida con Rust que revoluciona la experiencia de línea de comandos, especialmente útil para estudiantes como tú que manejan múltiples lenguajes y proyectos de programación.
+| Día | Temas | Ejercicios destacados |
+|-----|-------|----------------------|
+| 1 | Variables, tipos, operadores, E/S | `hola_mundo.py`, `tipos_datos.py`, `operadores.py` |
+| 2 | Condicionales | `condicionales.py`, `mayor_edad.py` |
+| 3 | Bucles (`for`, `while`) | `bucles.py`, `control_bucles.py` |
+| 4 | Funciones básicas | `funciones.py`, `calculadora.py` |
+| 5 | Listas, tuplas, diccionarios | `listas.py`, `tuplas.py`, `diccionario.py` |
+| 6 | Bucles con input | `adivina_numero.py`, `verificador_contraseña.py`, `menu_interactivo.py` |
+| 7 | Sets, manejo de errores | `manejo_errores.py`, `operaciones_sets.py`, `division_segura.py` |
+| 8 | Archivos (lectura/escritura) | `archivos.py`, `leer_archivo.py`, `append_linea.py` |
+| 9 | Módulos estándar, `with` | `modulo_math.py`, `modulo_random.py`, `modulo_datetime.py` |
+| 10 | Módulos propios (importación) | `calculadora.py` + `utilidades.py` + `usar_utilidades.py` |
+| 11 | Funciones avanzadas | `funciones_avanzadas.py`, `calculadora_funcion.py` |
+| 12 | `*args` y `**kwargs` | `ejercicio1_args.py` … `ejercicio5_final.py` |
 
-## ¿Por qué Warp es perfecto para tu flujo de estudios?
+## Bash / Terminal — MoureDev (34 apuntes)
 
-### 1. **Gestión de múltiples cursos y proyectos**
-Tu repositorio muestra que estudias:
-- **"Ingeniería Informática"** *(formación autodidacta estructurada)*
-- **Python 2025** *(curso intensivo con ejercicios diarios autodidacta)*
-- **Java con MoureDev** *(ejercicios de programación básica)*
-- **Cursos de Hola Mundo** *(Cursos del creador de la academia de Hola Mundo)*
+Desde introducción a la shell hasta scripting completo:
+`Historia → Comandos básicos → Navegación → Permisos → Procesos → Alias → Scripting → Argumentos → Condicionales`
 
+Ejercicios organizados en 6 bloques: primeros pasos, gestión de archivos, comandos avanzados, administración del sistema, procesos/alias, y scripting.
 
-### 2. **Mejor experiencia de aprendizaje progresivo**
-- **Bloques de comandos**: Perfecto para seguir tus ejercicios diarios (Día 1, Día 2, etc.)
-- **Historial organizado**: Revisar comandos de sesiones anteriores de estudio
-- **Autocompletado inteligente**: Especialmente útil mientras aprendes sintaxis nueva
+## Java — MoureDev
 
-### 3. **Soporte para tu stack tecnológico**
-Basado en tu repositorio, trabajas con:
-- **Python** (tu lenguaje principal con +100 archivos de ejercicios)
-- **Java** (ejercicios básicos y orientación a objetos)
-- **Git/GitHub** (control de versiones para tus proyectos)
-- **Obsidian** (para tus apuntes markdown)
-- **Multiple IDEs** (IntelliJ IDEA, VSCode,  Windsurf, Antigravity)
+Proyecto IntelliJ (`hola-java`). Cubre: `HelloWorld`, `DataTypes`, `VariablesAndConstants`, `Operators`, `Strings`, `Conditionals` — cada tema con su archivo de ejercicios (`*Exercises.java`).
 
-## Comandos específicos para tu flujo de estudios
+## Tecnologías y herramientas
 
-### 🐍 Python (tu lenguaje principal)
-```bash
-# Navegar a tus ejercicios diarios
-cd "PROGRAMACION\Python\Python 2025\Ejercicios 2025\Dia_10"
-
-# Ejecutar tu calculadora modular
-python calculadora.py
-
-# Probar ejercicios con módulos importados
-python usar_utilidades.py
-
-# Crear nuevo archivo de ejercicio del día siguiente
-new-item "Dia_13\nuevo_ejercicio.py"
-```
-
-### ☕ Java (ejercicios MoureDev)
-```bash
-# Navegar a proyectos Java
-cd "PROGRAMACION\MoureDev\Java\hola-java\src"
-
-# Compilar código Java
-javac HelloWorld.java
-
-# Ejecutar programa
-java HelloWorld
-
-# Compilar múltiples archivos
-javac *.java
-```
-
-### 📚 Gestión de apuntes (Obsidian)
-```bash
-# Navegar a apuntes del día
-cd "PROGRAMACION\Python\Python 2025\Apuntes 2025"
-
-# Crear nuevo archivo de apuntes
-new-item "Dia_12.md"
-
-# Ver contenido de apuntes anteriores
-get-content "Dia_1.md"
-```
-
-### 🗂️ Git (para este repositorio)
-```bash
-# Ver estado completo del repositorio
-git status
-
-# Agregar nuevos ejercicios del día
-git add "PROGRAMACION\Python\Python 2025\Ejercicios 2025\Dia_*"
-
-# Commit con patrón de tus mensajes
-git commit -m "Add: Ejercicios Día 12 - Funciones avanzadas"
-
-# Ver historial de commits por carpeta
-git log --oneline "PROGRAMACION\Python\Python 2025"
-```
-
-
-## Ventajas específicas para tu flujo de estudios
-
-### 🎯 **Para tus ejercicios diarios**
-1. **Bloques por día**: Agrupa comandos de cada día de ejercicios (Día 1, Día 2, etc.)
-2. **Historial de progreso**: Revisar fácilmente qué hiciste en sesiones anteriores
-3. **Menos errores de sintaxis**: Especialmente útil mientras aprendes Python y Java
-4. **Autocompletado de rutas**: Navegar rápido entre tus carpetas complejas
-
-### 🔄 **Para tu metodología de estudio**
-- **Sesión diaria estructurada**: Comandos organizados por tema del día
-- **Comparación de versiones**: Ver evolución entre ejercicios similares
-- **Múltiples proyectos activos**: Cambiar entre "Ingeniería", MoureDev, y Python 2025, Hola mundo, etc.
-- **Integración con Obsidian**: Comandos para gestionar tus apuntes markdown
-
-### 📈 **Para tu progreso académico**
-- **Seguimiento temporal**: Ver cuándo trabajaste en cada ejercicio
-- **Patrones de estudio**: Identificar qué comandos usas más frecuentemente
-- **Eficiencia mejorada**: Menos tiempo navegando, más tiempo programando
-
-## Casos de uso reales en tu repositorio
-
-### 📊 **Sesión típica de estudio Python**
-```bash
-# Arrancar sesión del día
-cd "PROGRAMACION\Python\Python 2025"
-ls
-
-# Revisar apuntes del día anterior
-code "Apuntes 2025\Dia_11.md"
-
-# Trabajar en ejercicios nuevos
-cd "Ejercicios 2025\Dia_12"
-python funciones_avanzadas.py
-
-# Commit del progreso
-git add .
-git commit -m "Add: Día 12 completado - *args y **kwargs"
-```
-
-### ☕ **Sesión de ejercicios Java**
-```bash
-# Cambiar al contexto Java
-cd "PROGRAMACION\MoureDev\Java\hola-java\src"
-
-# Compilar y probar
-javac BeginnerExercises.java
-java BeginnerExercises
-
-# Comparar con ejercicios anteriores
-code .
-```
-
-### 📝 **Preparar material de estudio**
-```bash
-# Crear estructura para nuevo día
-mkdir "PROGRAMACION\Python\Python 2025\Ejercicios 2025\Dia_13"
-new-item "PROGRAMACION\Python\Python 2025\Apuntes 2025\Dia_13.md"
-
-# Revisar todos los apuntes disponibles
-ls "PROGRAMACION\Python\Python 2025\Apuntes 2025\*.md"
-```
-
-## Configuración recomendada para ti
-
-### 🎨 **Temas y personalización**
-- **Tema oscuro**: Mejor para sesiones largas de programación
-- **Fuente código**: Optimizada para Python y Java
-- **Colores personalizados**: Diferencias visuales para cada lenguaje
-
-### 🔌 **Integración con tu stack**
-- **Obsidian**: Comandos para crear y editar apuntes
-- **VSCode**: Apertura rápida de proyectos
-- **IntelliJ**: Gestión de proyectos Java
-- **Git**: Workflows optimizados para tu patrón de commits
-
-
-## Beneficios inmediatos para tus estudios
-
-✅ **Historial inteligente** de todos tus ejercicios por día
-✅ **Autocompletado** para rutas complejas de Windows
-✅ **Bloques visuales** para organizar sesiones de estudio
-✅ **Integración Git** mejorada para tu flujo de commits diarios
+- **Lenguajes:** Python, Java, Bash/Shell
+- **IDEs:** IntelliJ IDEA, VSCode
+- **Apuntes:** Obsidian (Markdown)
+- **Control de versiones:** Git / GitHub
 
 ---
 
-
-👨‍🎓 *Documento creado por Jonathan - Estudiante de Informática*
-📅*Última actualización: Estructura del repositorio adaptada al progreso actual de mis estudios*
+*Jonathan — Estudiante de Informática · Última actualización: Mayo 2025*
