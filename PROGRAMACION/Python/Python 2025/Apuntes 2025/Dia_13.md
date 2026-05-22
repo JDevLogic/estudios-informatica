@@ -485,3 +485,30 @@ Cada clase responde a su manera.
 En este ejercicio he aprendido que varios objetos pueden compartir el mismo método `atacar`, usarse con la misma estructura y tener comportamientos diferentes según la clase.
 
 Esto hace que el código sea más limpio, más flexible y más fácil de ampliar.
+
+## super()
+
+`super()` permite llamar a métodos de la clase padre desde una clase hija.
+
+En este ejercicio se usó para evitar repetir código común entre `Personaje`, `Guerrero` y `Mago`.
+
+La clase `Personaje` contiene los atributos comunes:
+
+* `nombre`
+* `vida`
+* `nivel`
+
+La clase `Guerrero` hereda de `Personaje` y añade:
+
+* `arma`
+
+La clase `Mago` hereda de `Personaje` y añade:
+
+* `mana`
+
+Sin `super()`, la clase hija tendría que repetir manualmente:
+
+```python
+self.nombre = nombre
+self.vida = vida
+self.nivel = nivel
