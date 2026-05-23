@@ -512,3 +512,37 @@ Sin `super()`, la clase hija tendría que repetir manualmente:
 self.nombre = nombre
 self.vida = vida
 self.nivel = nivel
+
+```
+
+Con `super()`, la clase hija puede reutilizar el constructor de la clase padre:
+
+```python
+super().__init__(nombre, vida, nivel)
+```
+
+Después, la clase hija solo añade sus atributos propios.
+
+Ejemplo conceptual:
+
+```text
+Personaje se encarga de lo común.
+Guerrero añade arma.
+Mago añade mana.
+```
+
+También se puede usar `super()` con métodos normales, no solo con `__init__`.
+
+Por ejemplo, `Guerrero` puede llamar a `mostrar_info()` de `Personaje` y después añadir su propia información:
+
+```python
+def mostrar_info(self):
+    super().mostrar_info()
+    print(self.arma)
+```
+
+La idea clave es:
+
+```text
+super() reutiliza código de la clase padre desde la clase hija.
+```
